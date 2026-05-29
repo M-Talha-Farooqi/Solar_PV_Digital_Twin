@@ -1,0 +1,50 @@
+{
+  "Random Forest": {
+    "test": {
+      "rmse": 0.0039,
+      "mae": 0.0022,
+      "r2": 0.9998,
+      "mape": 1.1323
+    },
+    "val": {
+      "rmse": 0.0048,
+      "mae": 0.0026,
+      "r2": 0.9996,
+      "mape": 1.3084
+    },
+    "train_time_s": 24.5,
+    "inference_latency_ms_per_sample": 0.0347
+  },
+  "XGBoost": {
+    "test": {
+      "rmse": 0.005126,
+      "mae": 0.003495,
+      "r2": 0.999576,
+      "mape": 1.8931
+    },
+    "val": {
+      "rmse": 0.005853,
+      "mae": 0.003884,
+      "r2": 0.999446,
+      "mape": 2.0694
+    },
+    "train_time_s": 9.114,
+    "inference_latency_ms_per_sample": 0.003801
+  },
+  "LSTM": {
+    "test": {
+      "rmse": 0.005594,
+      "mae": 0.004171,
+      "r2": 0.999496,
+      "mape": 3.6872
+    },
+    "val": {
+      "rmse": 0.005609,
+      "mae": 0.004184,
+      "r2": 0.999492,
+      "mape": 3.8283
+    },
+    "train_time_s": 1850.5,
+    "inference_latency_ms_per_sample": 0.15
+  }
+}

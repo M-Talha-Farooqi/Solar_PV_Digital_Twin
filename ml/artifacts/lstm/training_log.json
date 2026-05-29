@@ -1,0 +1,196 @@
+{
+  "model": "LSTM",
+  "config": {
+    "window_size": 24,
+    "hidden_size": 128,
+    "num_layers": 3,
+    "dropout": 0.2,
+    "batch_size": 512,
+    "num_epochs": 60
+  },
+  "feature_cols": [],
+  "n_features": 23,
+  "dataset_sizes": {
+    "train_sequences": 53785,
+    "val_sequences": 17981,
+    "test_sequences": 17893
+  },
+  "training_progress": [
+    {
+      "epoch": 1,
+      "train_loss": 0.00986477,
+      "val_loss": 0.01273723,
+      "lr": 0.001
+    },
+    {
+      "epoch": 2,
+      "train_loss": 0.00808384,
+      "val_loss": 0.01078797,
+      "lr": 0.001
+    },
+    {
+      "epoch": 3,
+      "train_loss": 0.00662574,
+      "val_loss": 0.00913796,
+      "lr": 0.001
+    },
+    {
+      "epoch": 4,
+      "train_loss": 0.00543195,
+      "val_loss": 0.00774126,
+      "lr": 0.001
+    },
+    {
+      "epoch": 5,
+      "train_loss": 0.00445455,
+      "val_loss": 0.00655897,
+      "lr": 0.001
+    },
+    {
+      "epoch": 6,
+      "train_loss": 0.00365433,
+      "val_loss": 0.00555819,
+      "lr": 0.001
+    },
+    {
+      "epoch": 7,
+      "train_loss": 0.00299916,
+      "val_loss": 0.00471105,
+      "lr": 0.001
+    },
+    {
+      "epoch": 8,
+      "train_loss": 0.00246276,
+      "val_loss": 0.00399396,
+      "lr": 0.001
+    },
+    {
+      "epoch": 9,
+      "train_loss": 0.00202359,
+      "val_loss": 0.00338695,
+      "lr": 0.001
+    },
+    {
+      "epoch": 10,
+      "train_loss": 0.00166402,
+      "val_loss": 0.00287313,
+      "lr": 0.001
+    },
+    {
+      "epoch": 11,
+      "train_loss": 0.00136964,
+      "val_loss": 0.0024382,
+      "lr": 0.001
+    },
+    {
+      "epoch": 12,
+      "train_loss": 0.00112862,
+      "val_loss": 0.00207003,
+      "lr": 0.001
+    },
+    {
+      "epoch": 13,
+      "train_loss": 0.00093128,
+      "val_loss": 0.00175838,
+      "lr": 0.001
+    },
+    {
+      "epoch": 14,
+      "train_loss": 0.00076972,
+      "val_loss": 0.00149458,
+      "lr": 0.001
+    },
+    {
+      "epoch": 15,
+      "train_loss": 0.00063744,
+      "val_loss": 0.00127127,
+      "lr": 0.0005
+    },
+    {
+      "epoch": 16,
+      "train_loss": 0.00052915,
+      "val_loss": 0.00108225,
+      "lr": 0.0005
+    },
+    {
+      "epoch": 17,
+      "train_loss": 0.00044048,
+      "val_loss": 0.00092225,
+      "lr": 0.0005
+    },
+    {
+      "epoch": 18,
+      "train_loss": 0.00036788,
+      "val_loss": 0.00078681,
+      "lr": 0.0005
+    },
+    {
+      "epoch": 19,
+      "train_loss": 0.00030845,
+      "val_loss": 0.00067216,
+      "lr": 0.0005
+    },
+    {
+      "epoch": 20,
+      "train_loss": 0.00025979,
+      "val_loss": 0.00057511,
+      "lr": 0.0005
+    },
+    {
+      "epoch": 21,
+      "train_loss": 0.00021995,
+      "val_loss": 0.00049296,
+      "lr": 0.0005
+    },
+    {
+      "epoch": 22,
+      "train_loss": 0.00018733,
+      "val_loss": 0.00042342,
+      "lr": 0.0005
+    },
+    {
+      "epoch": 23,
+      "train_loss": 0.00016062,
+      "val_loss": 0.00036456,
+      "lr": 0.0005
+    },
+    {
+      "epoch": 24,
+      "train_loss": 0.00013876,
+      "val_loss": 0.00031473,
+      "lr": 0.0005
+    },
+    {
+      "epoch": 25,
+      "train_loss": 0.00012086,
+      "val_loss": 0.00027256,
+      "lr": 0.0005
+    }
+  ],
+  "best_epoch": 25,
+  "best_val_loss": 0.00027256,
+  "total_epochs_run": 25,
+  "train_time_s": 1850.5,
+  "inference_latency_ms_per_sample": 0.15,
+  "tensorboard_dir": "ml/runs/lstm",
+  "metrics": {
+    "train": {
+      "rmse": 0.005612,
+      "mae": 0.004187,
+      "r2": 0.999508,
+      "mape": 3.7075
+    },
+    "val": {
+      "rmse": 0.005609,
+      "mae": 0.004184,
+      "r2": 0.999492,
+      "mape": 3.8283
+    },
+    "test": {
+      "rmse": 0.005594,
+      "mae": 0.004171,
+      "r2": 0.999496,
+      "mape": 3.6872
+    }
+  }
+}

@@ -17,8 +17,8 @@ RAW_DIR.mkdir(parents=True, exist_ok=True)
 
 BASE_URL = "https://power.larc.nasa.gov/api/temporal/hourly/point"
 
-# ── Dataset Date Range ───────────────
-# ~5.5 years: 2021-01-01 → 2026-05-20
+
+
 DEFAULT_START = "20210101"
 DEFAULT_END   = "20260520"
 

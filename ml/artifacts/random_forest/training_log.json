@@ -1,0 +1,235 @@
+{
+  "model": "RandomForest",
+  "config": {
+    "n_estimators": 200,
+    "max_depth": null,
+    "min_samples_leaf": 4,
+    "max_features": "sqrt",
+    "random_state": 42
+  },
+  "feature_cols": [
+    "ghi",
+    "dni",
+    "dhi",
+    "clearsky_ghi",
+    "temperature",
+    "wind_speed",
+    "humidity",
+    "clearness_index",
+    "hour_sin",
+    "hour_cos",
+    "month_sin",
+    "month_cos",
+    "doy_sin",
+    "doy_cos",
+    "clearsky_ratio",
+    "cell_temperature",
+    "ghi_lag_1h",
+    "ghi_lag_24h",
+    "ghi_rolling_3h",
+    "ghi_rolling_24h",
+    "loc_dhaka",
+    "loc_lahore",
+    "loc_thar_desert"
+  ],
+  "n_features": 23,
+  "dataset_sizes": {
+    "train": 53809,
+    "val": 18005,
+    "test": 17917
+  },
+  "training_progress": [
+    {
+      "n_trees": 10,
+      "oob_r2": 0.9792
+    },
+    {
+      "n_trees": 20,
+      "oob_r2": 0.9995
+    },
+    {
+      "n_trees": 30,
+      "oob_r2": 0.9996
+    },
+    {
+      "n_trees": 40,
+      "oob_r2": 0.9997
+    },
+    {
+      "n_trees": 50,
+      "oob_r2": 0.9997
+    },
+    {
+      "n_trees": 60,
+      "oob_r2": 0.9997
+    },
+    {
+      "n_trees": 70,
+      "oob_r2": 0.9997
+    },
+    {
+      "n_trees": 80,
+      "oob_r2": 0.9998
+    },
+    {
+      "n_trees": 90,
+      "oob_r2": 0.9998
+    },
+    {
+      "n_trees": 100,
+      "oob_r2": 0.9998
+    },
+    {
+      "n_trees": 110,
+      "oob_r2": 0.9998
+    },
+    {
+      "n_trees": 120,
+      "oob_r2": 0.9998
+    },
+    {
+      "n_trees": 130,
+      "oob_r2": 0.9998
+    },
+    {
+      "n_trees": 140,
+      "oob_r2": 0.9998
+    },
+    {
+      "n_trees": 150,
+      "oob_r2": 0.9998
+    },
+    {
+      "n_trees": 160,
+      "oob_r2": 0.9998
+    },
+    {
+      "n_trees": 170,
+      "oob_r2": 0.9998
+    },
+    {
+      "n_trees": 180,
+      "oob_r2": 0.9998
+    },
+    {
+      "n_trees": 190,
+      "oob_r2": 0.9998
+    },
+    {
+      "n_trees": 200,
+      "oob_r2": 0.9998
+    }
+  ],
+  "final_oob_r2": 0.9998,
+  "feature_importances": [
+    {
+      "feature": "ghi",
+      "importance": 0.22065984
+    },
+    {
+      "feature": "clearsky_ghi",
+      "importance": 0.15626284
+    },
+    {
+      "feature": "dhi",
+      "importance": 0.15319073
+    },
+    {
+      "feature": "clearness_index",
+      "importance": 0.09921553
+    },
+    {
+      "feature": "ghi_rolling_3h",
+      "importance": 0.09746209
+    },
+    {
+      "feature": "ghi_lag_1h",
+      "importance": 0.0707728
+    },
+    {
+      "feature": "cell_temperature",
+      "importance": 0.05742428
+    },
+    {
+      "feature": "dni",
+      "importance": 0.05473748
+    },
+    {
+      "feature": "hour_cos",
+      "importance": 0.03479778
+    },
+    {
+      "feature": "hour_sin",
+      "importance": 0.03177482
+    },
+    {
+      "feature": "clearsky_ratio",
+      "importance": 0.00786347
+    },
+    {
+      "feature": "ghi_lag_24h",
+      "importance": 0.00746555
+    },
+    {
+      "feature": "temperature",
+      "importance": 0.00334155
+    },
+    {
+      "feature": "ghi_rolling_24h",
+      "importance": 0.00244591
+    },
+    {
+      "feature": "doy_cos",
+      "importance": 0.00071417
+    },
+    {
+      "feature": "humidity",
+      "importance": 0.00062189
+    },
+    {
+      "feature": "month_cos",
+      "importance": 0.00055429
+    },
+    {
+      "feature": "doy_sin",
+      "importance": 0.00023151
+    },
+    {
+      "feature": "wind_speed",
+      "importance": 0.00022801
+    },
+    {
+      "feature": "month_sin",
+      "importance": 0.00012254
+    },
+    {
+      "feature": "loc_dhaka",
+      "importance": 4.19e-05
+    },
+    {
+      "feature": "loc_lahore",
+      "importance": 3.867e-05
+    },
+    {
+      "feature": "loc_thar_desert",
+      "importance": 3.233e-05
+    }
+  ],
+  "train_time_s": 24.5,
+  "inference_latency_ms_per_sample": 0.0347,
+  "metrics": {
+    "train": {},
+    "val": {
+      "rmse": 0.0048,
+      "mae": 0.0026,
+      "r2": 0.9996,
+      "mape": 1.3084
+    },
+    "test": {
+      "rmse": 0.0039,
+      "mae": 0.0022,
+      "r2": 0.9998,
+      "mape": 1.1323
+    }
+  }
+}
