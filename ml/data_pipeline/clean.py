@@ -31,7 +31,7 @@ def clean_location(loc: Location) -> pd.DataFrame:
     df = load_raw(loc)
     original_rows = len(df)
 
-    # 1 ── Replace NASA missing-value sentinel (-999) with NaN ────────────
+    
     missing_before = (df == -999).sum()
     df = df.replace(-999, np.nan)
     df = df.replace(-999.0, np.nan)
@@ -43,7 +43,7 @@ def clean_location(loc: Location) -> pd.DataFrame:
             pct = count / original_rows * 100
             print(f"    {col_name}: {count} ({pct:.1f}%)")
 
-    # 2 ── Interpolate short gaps (≤ MAX_INTERPOLATE_GAP hours) ───────────
+    
     df_interpolated = df.interpolate(
         method="time",
         limit=MAX_INTERPOLATE_GAP,
@@ -61,11 +61,11 @@ def clean_location(loc: Location) -> pd.DataFrame:
             dropped = before - len(df)
             print(f"  Dropped {dropped} rows with long-gap NaN")
 
-    # 4 ── Localize timestamps (UTC → local) ─────────────────────────────
+    
     df.index = df.index.tz_localize("UTC").tz_convert(loc.timezone)
     print(f"  Timezone: UTC → {loc.timezone}")
 
-    # 5 ── Add location column ────────────────────────────────────────────
+    
     df["location"] = loc.name
 
     print(f"  Final shape: {df.shape}")
@@ -82,7 +82,7 @@ def main():
         df = clean_location(loc)
         frames.append(df)
 
-    # ── Concatenate all locations ────────────────────────────────────────
+    
     combined = pd.concat(frames)
     combined = combined.sort_index()
     print(f"\n{'='*50}")
@@ -90,7 +90,7 @@ def main():
     print(f"Locations: {combined['location'].unique().tolist()}")
     print(f"Date range: {combined.index.min()} → {combined.index.max()}")
 
-    # ── Save to parquet ──────────────────────────────────────────────────
+    
     out_path = PROCESSED_DIR / "weather.parquet"
     combined.to_parquet(out_path, engine="pyarrow")
     print(f"\n Saved processed data → {out_path.relative_to(PROJECT_ROOT)}")

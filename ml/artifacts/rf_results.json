@@ -1,0 +1,44 @@
+{
+  "model": "RandomForest",
+  "train_time_s": 24.5,
+  "inference_latency_ms_per_sample": 0.0347,
+  "oob_r2": 0.9998,
+  "n_estimators": 200,
+  "val": {
+    "rmse": 0.0048,
+    "mae": 0.0026,
+    "r2": 0.9996,
+    "mape": 1.3084
+  },
+  "test": {
+    "rmse": 0.0039,
+    "mae": 0.0022,
+    "r2": 0.9998,
+    "mape": 1.1323
+  },
+  "feature_cols": [
+    "ghi",
+    "dni",
+    "dhi",
+    "clearsky_ghi",
+    "temperature",
+    "wind_speed",
+    "humidity",
+    "clearness_index",
+    "hour_sin",
+    "hour_cos",
+    "month_sin",
+    "month_cos",
+    "doy_sin",
+    "doy_cos",
+    "clearsky_ratio",
+    "cell_temperature",
+    "ghi_lag_1h",
+    "ghi_lag_24h",
+    "ghi_rolling_3h",
+    "ghi_rolling_24h",
+    "loc_dhaka",
+    "loc_lahore",
+    "loc_thar_desert"
+  ]
+}
