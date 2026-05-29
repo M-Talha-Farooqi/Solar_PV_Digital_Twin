@@ -81,8 +81,8 @@ You can run individual scripts to re-create the pipeline step-by-step from the p
 
 ## 🤝 Contributors
 
-* [@M-Talha-Farooqi](https://github.com/M-Talha-Farooqi)
-* [@TalhaFarooq82](https://github.com/TalhaFarooq82)
-* [@MuhammadTalha1404](https://github.com/MuhammadTalha1404)
-* [@theshoaibhamza](https://github.com/theshoaibhamza)
-* [@heyhusn](https://github.com/heyhusn)
+* [M. Talha Farooqi](https://github.com/M-Talha-Farooqi)
+* [Shoaib Hamza](https://github.com/theshoaibhamza)
+* [Husnain Aslam](https://github.com/heyhusn)
+* [Talha Farooq](https://github.com/TalhaFarooq82)
+* [Muhammad Talha](https://github.com/MuhammadTalha1404)
