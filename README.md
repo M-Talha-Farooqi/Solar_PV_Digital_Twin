@@ -1,4 +1,4 @@
-# Solar PV Digital Twin ☀️
+# Solar PV Digital Twin Simulation & Modeling
 
 A comprehensive digital twin for a solar photovoltaic (PV) power generation system. This project features a **fully interactive 3D web simulation** that predicts solar power output in real-time. These predictions are driven by three distinct machine learning models (Random Forest, XGBoost, and LSTM) which were trained on real meteorological data fetched directly from the NASA POWER dataset for diverse locations (Dhaka, Lahore, and the Thar Desert). 
 
