@@ -79,6 +79,21 @@ You can run individual scripts to re-create the pipeline step-by-step from the p
 
 ---
 
+## 🔌 Backend API
+
+The project includes a completed FastAPI backend that serves the trained machine learning models for real-time inference.
+
+### Running the API Server
+```bash
+python backend/main.py
+```
+*(The server will start on `http://0.0.0.0:8000`)*
+
+### Endpoints
+* **`POST /predict`**: The primary inference endpoint. It accepts meteorological parameters (such as GHI, temperature, wind speed, and location) and returns the predicted solar PV power generation using the selected machine learning models.
+
+---
+
 ## 🤝 Contributors
 
 * [M. Talha Farooqi](https://github.com/M-Talha-Farooqi)
